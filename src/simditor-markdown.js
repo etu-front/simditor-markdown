@@ -122,3 +122,6 @@ SimditorMarkdown.initClass();
 Simditor.Toolbar.addButton(SimditorMarkdown);
 
 window.SimditorMarkdown = SimditorMarkdown;
+if (typeof module === 'object') {
+    module.exports = SimditorMarkdown
+}

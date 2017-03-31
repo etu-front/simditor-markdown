@@ -1,7 +1,7 @@
 {
   "name": "@etu/simditor-markdown",
   "description": "Add markdown editing mode for simditor.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "lib/simditor-markdown.js",
   "homepage": "https://github.com/etu-front/simditor-markdown",
   "author": {
