@@ -1,15 +1,18 @@
 simditor-markdown
 =============
 
-Add a markdown editing button for Simditor. Use [marked](https://github.com/chjj/marked) as markdown parser and [to-markdown](https://github.com/domchristie/to-markdown) as HTML to markdown converter.
+Add a markdown editing button for Simditor. Use [markdown-it](https://github.com/markdown-it/markdown-it) as markdown parser and [upndown](https://github.com/netgusto/upndown) as HTML to markdown converter.
 
-###Usage
+*This fork fixed XSS issue in unmaintained package marked, install failed issue with old to-markdown package*
+
+
+### Usage
 
 Reference button and dependency script on your page with Simditor:
 
 ```html
-<script type="text/javascript" src="[path]/marked.js"></script>
-<script type="text/javascript" src="[path]/to-markdown.js"></script>
+<script type="text/javascript" src="https://unpkg.com/markdown-it@8.3.1/dist/markdown-it.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/upndown@2.1.0/lib/upndown.bundle.min.js"></script>
 <script type="text/javascript" src="[path]/simditor-markdown.js"></script>
 
 <link rel="stylesheet" href="[path]/simditor-markdown.css" media="screen" charset="utf-8" />
@@ -24,7 +27,7 @@ var editor = new Simditor({
 });
 ```
 
-###Options
+### Options
 
 If you want to switch to markdown mode right after Simditor initialized, pass `markdown: true` to Simditor init options:
 
