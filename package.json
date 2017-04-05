@@ -1,7 +1,7 @@
 {
   "name": "@etu/simditor-markdown",
   "description": "Add markdown editing mode for simditor.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "lib/simditor-markdown.js",
   "homepage": "https://github.com/etu-front/simditor-markdown",
   "author": {
@@ -19,7 +19,6 @@
     "build": "babel --presets es2015 ./src/simditor-markdown.js -o ./lib/simditor-markdown.js"
   },
   "dependencies": {
-    "babel": "^6.23.0",
     "babel-cli": "^6.24.0",
     "babel-preset-es2015": "^6.24.0",
     "jquery": "~2.1.4",
